@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Mishra - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-50 via-white to-blue-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <div class="flex items-center space-x-2 text-2xl font-extrabold text-indigo-700">
+  <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2"
+    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+  </svg>
+  <span>Ankit <span class="text-purple-600">Mishra</span></span>
+</div>
+
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#experience" class="hover:text-indigo-600">Experience</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="text-indigo-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+    <div id="mobile-menu" class="hidden transition-all duration-300 ease-in-out">
+    <a href="#about" class="block py-2 hover:text-indigo-600">About</a>
+    <a href="#skills" class="block py-2 hover:text-indigo-600">Skills</a>
+    <a href="#projects" class="block py-2 hover:text-indigo-600">Projects</a>
+    <a href="#experience" class="block py-2 hover:text-indigo-600">Experience</a>
+    <a href="contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+  </div>
+</nav>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+  <section class="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-indigo-700 to-purple-600 text-white text-center">
+    <img src="https://anup0000pal.github.io/anup-portfolio/ankitprofile.jpg" alt="Ankit Mishra" class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-6 hover:scale-105 transition-transform duration-300">
+    <h1 class="text-5xl font-extrabold mb-4">Hi, I'm Ankit Mishra</h1>
+    <p class="text-xl mb-6">Software Engineer| ASP.NET MVC | ASP.NET</p>
+    <a href="#contact" class="px-6 py-3 bg-white text-indigo-700 font-semibold rounded-full hover:bg-indigo-100">Get In Touch</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+    <p class="text-lg text-center">I'm a passionate .NET Developer (SQL Developer) with 2 years of experience building scalable web applications with .NET MVC, and SQL Server. I love solving problems, collaborating in agile teams, and continuously learning new technologies.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">ASP.NET MVC</div>
+        <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">C# & .NET Core</div>      
+		<div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">Jquery & Ajax</div>
+        <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">SQL Server</div>
+        <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">Entity Framework</div>
+        <div class="bg-blue-100 p-6 rounded-lg text-center shadow-md hover:bg-blue-200">RESTful APIs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold">Vehicle Monitoring System Project</h3>
+        <p class="mt-2 text-sm">Managed	Administered vehicle entries, user permissions, and transporter payment details based on vehicle usage.
+          Technologies: C#, ASP.NET, Bootstrap, SQL Server 2019
+          </p>
+        <a href="#" target="_blank" class="mt-4 inline-block text-blue-700 underline">View Project</a> 
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold">GST Tax Audit</h3>
+        <p class="mt-2 text-sm">This project is Used for select Cases of GSTIN to audit them depends on required or not required according to transactions and it is currently running in GST office For the Audit purpose.
+          Technologies: C#, ASP.NET, Bootstrap, SQL Server 2019
+          </p>
+        <a href="#" target="_blank" class="mt-4 inline-block text-blue-700 underline">View Project</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold">Letter Management System</h3>
+        <p class="mt-2 text-sm">Managed letter tracking and provided administrative tools for managing letter statuses, remarks, and reporting.
+          Technologies: C#, ASP.NET, Bootstrap, SQL Server 2019
+          </p>
+		<a href="#" target="_blank" class="mt-4 inline-block text-blue-700 underline">View Project</a>
+		
+      </div>
+	  <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold">AG Audit</h3>
+        <p class="mt-2 text-sm">This project is Used for select Cases of GSTIN to audit them depends on required or not required according to transactions and here only sector officer and corporate officers make a query on it according to his/her permission and wait for the response on the given query  and it is currently running in GST office For the Audit purpose.
+          Technologies: C#, ASP.NET, Bootstrap, SQL Server 2019
+          </p>
+        <a href="#" target="_blank" class="mt-4 inline-block text-blue-700 underline">View Project</a>
+      </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+      <h3 class="text-2xl font-semibold">Department of State Taxes, Uttar Pradesh</h3>
+      <p class="mt-2 text-sm">Worked on modules for taxation services.</p>
+      <a href="https://comtax.up.nic.in/" target="_blank" class="mt-4 inline-block text-blue-700 underline">View Project</a>
+    </div>
+  </div>
+  </section>
+
+ <!-- Experience Section -->
+  <section id="experience" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Experience</h2>
+      <div class="space-y-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold text-indigo-700">Software Developer at Ashtak Infocom LLP,Lucknow</h3>
+          <p class="text-sm">June 2023 – Present</p>
+          <ul class="list-disc pl-6 mt-4 text-sm">
+            <li>Developing and maintaining web applications using ASP.NET MVC and .NET Core and Sql Server technologies.</li>
+            <li>Working on  API development for enterprise-level solutions.</li>
+            <li>Collaborating with cross-functional teams in Agile methodologies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-16 bg-gradient-to-r from-indigo-700 to-purple-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Let's Work Together</h2>
+    <p class="mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <p>Email: <a href="mailto:ankitmishra609@gmail.com" class="underline">ankitmishra609@gmail.com</a></p>
+    <p>Phone: +91 8957908332</p>
+    <p class="mt-4">
+      <a href="https://wa.me/918957908332" target="_blank" class="inline-flex items-center justify-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full transition">
+        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 1.95.5 3.77 1.39 5.37L2 22l4.72-1.33A9.934 9.934 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.67 0-3.21-.51-4.5-1.38l-.32-.22-2.8.79.74-2.66-.18-.33A7.93 7.93 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.06-5.94l-1.12-.33c-.15-.05-.31-.02-.43.09l-.74.75a7.52 7.52 0 01-3.16-3.16l.75-.75c.11-.11.15-.28.09-.43l-.33-1.12a.499.499 0 00-.47-.34c-.26 0-.5.21-.5.5 0 4.41 3.59 8 8 8 .28 0 .5-.22.5-.5a.5.5 0 00-.34-.47z"/>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </p>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>© 2024 Ankit Mishra |Deployed & Designed by Ankit</p>
+  </footer>
+	 <!-- Sticky Social Media Buttons -->
+  <div class="fixed top-1/3 left-0 z-50 hidden sm:flex flex-col space-y-2 p-1">
+    <a href="https://www.facebook.com/profile.php?id=100004547253257" target="_blank" class="bg-blue-600 p-3 rounded-r-full text-white hover:bg-blue-700 transition">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 10-11.5 9.87v-7H8v-2.87h2.5v-2.2c0-2.47 1.48-3.84 3.75-3.84 1.09 0 2.23.2 2.23.2v2.44h-1.25c-1.23 0-1.62.76-1.62 1.54v1.86h2.77l-.44 2.87h-2.33v7A10 10 0 0022 12z" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/ankit.ahhhm/" target="_blank" class="bg-gradient-to-br from-pink-500 to-yellow-500 p-3 rounded-r-full text-white hover:opacity-90 transition">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.584.01 4.85.07 1.366.062 2.633.34 3.608 1.316.976.975 1.254 2.243 1.316 3.608.06 1.267.07 1.65.07 4.85s-.01 3.584-.07 4.85c-.062 1.366-.34 2.633-1.316 3.608-.975.976-2.243 1.254-3.608 1.316-1.267.06-1.65.07-4.85.07s-3.584-.01-4.85-.07c-1.366-.062-2.633-.34-3.608-1.316-.976-.975-1.254-2.243-1.316-3.608C2.21 15.584 2.2 15.2 2.2 12s.01-3.584.07-4.85c.062-1.366.34-2.633 1.316-3.608.975-.976 2.243-1.254 3.608-1.316C8.416 2.21 8.8 2.2 12 2.2m0-2.2C8.737 0 8.332.01 7.052.07 5.785.129 4.625.394 3.678 1.34 2.732 2.286 2.467 3.446 2.408 4.713.01 8.332 0 8.737 0 12s.01 3.668.07 4.948c.06 1.267.325 2.427 1.27 3.373.946.946 2.106 1.21 3.373 1.27 1.28.06 1.685.07 4.948.07s3.668-.01 4.948-.07c1.267-.06 2.427-.325 3.373-1.27.946-.946 1.21-2.106 1.27-3.373.06-1.28.07-1.685.07-4.948s-.01-3.668-.07-4.948c-.06-1.267-.325-2.427-1.27-3.373-.946-.946-2.106-1.21-3.373-1.27C15.668.01 15.263 0 12 0z" />
+        <circle cx="12" cy="12" r="3.2" />
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/ankit-mishra-62b10ba5/" target="_blank" class="bg-blue-500 p-3 rounded-r-full text-white hover:bg-blue-600 transition">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.45 20.45h-3.71v-5.39c0-1.28-.46-2.15-1.62-2.15-.89 0-1.42.6-1.65 1.18-.08.2-.1.47-.1.75v5.61H9.65s.05-9.1 0-10.04h3.71v1.42c.49-.76 1.36-1.85 3.31-1.85 2.42 0 4.24 1.58 4.24 4.98v5.49zM5.34 7.43c-1.2 0-1.98-.79-1.98-1.77 0-.99.79-1.77 2.01-1.77s1.98.78 1.99 1.77c0 .98-.77 1.77-2.02 1.77h-.01zM3.5 20.45h3.7v-10.04H3.5v10.04zM22.23 0H1.77C.79 0 0 .8 0 1.78v20.44C0 23.2.79 24 1.77 24h20.47C23.2 24 24 23.2 24 22.22V1.78C24 .8 23.2 0 22.23 0z" />
+      </svg>
+    </a>
+    <!-- <a href="https://www.youtube.com/@anuppal8871" target="_blank" class="bg-red-600 p-3 rounded-r-full text-white hover:bg-red-700 transition">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23.5 6.2s-.2-1.6-.8-2.3c-.7-.9-1.5-.9-1.8-1-2.5-.2-6.3-.2-6.3-.2h-.1s-3.8 0-6.3.2c-.3 0-1.1 0-1.8 1-.6.7-.8 2.3-.8 2.3s-.2 1.9-.2 3.8v1.7c0 1.9.2 3.8.2 3.8s.2 1.6.8 2.3c.7.9 1.6.9 2 1 1.5.1 6.2.2 6.2.2s3.8 0 6.3-.2c.3 0 1.1 0 1.8-1 .6-.7.8-2.3.8-2.3s.2-1.9.2-3.8v-1.7c0-1.9-.2-3.8-.2-3.8zM9.7 15.6V8.4l6.4 3.6-6.4 3.6z" />
+      </svg>
+    </a>
+    <a href="https://x.com/" target="_blank" class="bg-blue-400 p-3 rounded-r-full text-white hover:bg-blue-500 transition">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22.46 6c-.77.35-1.5.6-2.32.7a4.1 4.1 0 001.8-2.27c-.8.5-1.67.85-2.6 1.05a4.07 4.07 0 00-6.93 3.71c-3.38-.17-6.38-1.78-8.38-4.22A4.1 4.1 0 004 8.18a4.07 4.07 0 01-1.84-.5v.05c0 1.94 1.38 3.55 3.2 3.92a4.1 4.1 0 01-1.83.07 4.1 4.1 0 003.83 2.84A8.22 8.22 0 012 18.58a11.59 11.59 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.7 0-.18 0-.36-.01-.53.8-.58 1.5-1.3 2.05-2.1z" />
+      </svg>
+    </a> -->
+  </div>
+
+
+</body>
+
+</html>
